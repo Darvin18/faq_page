@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    background-color: #fff;
+}
+section{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+}
+.main_section h1{
+    text-align: center;
+    font-size: 45px;
+}
+.guarantees{
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 10px;
+    max-height: 100px;
+    border: solid 2px #1b1b1b;
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+.open{max-height: 500px;}
+.guarantees h2{
+    margin: 27px 0 27px 30px;
+    font-size: 33px;
+}
+.wrapper_menu{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+    transform: scalex(0);
+}
+.wrapper_menu p{
+    margin: 16px 0 16px 30px;
+    font-size: 18px;
+}
+.second_open{
+    transform: scalex(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 460px){
+    section{padding: 0 5%;}
+}
